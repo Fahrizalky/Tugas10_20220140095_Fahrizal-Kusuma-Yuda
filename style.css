@@ -1,0 +1,78 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #74cfe2;
+}
+
+.container {
+    border: 5px solid rgb(249, 248, 248);
+    padding: 20px;
+    margin: 20px;
+    max-width: 900px;
+    width: 200%;
+    border-radius: 15px;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    text-align: center;
+    color: rgb(15, 14, 14); /* Assuming you want the header text to be white as well */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling specific sections' text color to white */
+form label,
+form .peminatan,
+form input,
+form select,
+form textarea {
+    color: rgb(7, 7, 7);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(10, 10, 10);
+    opacity: 1;
+}
+
+input, select, textarea, button {
+    margin-top: 5px;
+    background-color: #f3f0f0;
+}
+
+.peminatan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Ensure all peminatan labels are white */
+.peminatan label {
+    color: rgb(12, 12, 12);
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #151617;
+    color: rgb(247, 245, 245);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7bc2de;
+}
